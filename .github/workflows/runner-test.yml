@@ -1,0 +1,36 @@
+
+name: Self-Hosted Runner Test
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  runner-test:
+    name: Test AWS EC2 Runner
+
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Display Welcome Message
+        run: echo "Hello DevOps! My self-hosted runner is working."
+
+      - name: Check Operating System
+        run: uname -a
+
+      - name: Check Git Version
+        run: git --version
+
+      - name: Display Hostname
+        run: hostname
+
+      - name: Display Current Date
+        run: date
+
+      - name: Success Message
+        run: echo "GitHub Actions executed successfully on AWS EC2!"
