@@ -175,7 +175,7 @@ jobs:
 
 Cloud & DevOps Engineer | AWS | Linux | Networking | Terraform | Jenkins | GitHub Actions
 
-GitHub: https://github.com/venkatesh762004
+GitHub: (https://github.com/venkatesh762004/github-self-hosted-runner.git)
 
 ---
 
